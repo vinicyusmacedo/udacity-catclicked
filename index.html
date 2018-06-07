@@ -1,0 +1,16 @@
+<html>
+	<body>
+		<img id="cat" src="https://lh3.ggpht.com/nlI91wYNCrjjNy5f-S3CmVehIBM4cprx-JFWOztLk7vFlhYuFR6YnxcT446AvxYg4Ab7M1Fy0twaOCWYcUk=s0#w=640&h=426"\>
+		<h1>
+			Clicks <p id="count">
+			<script>
+				var click = 0;
+				var elem = document.getElementById("cat");
+				elem.addEventListener("click", function() {
+					click++;
+					document.getElementById("count").innerHTML = click;
+				}, false);
+			</script>
+		</h1>
+	</body>
+</html>
